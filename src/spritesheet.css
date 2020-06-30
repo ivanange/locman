@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-behance {
+    width: 48px;
+    height: 48px;
+    background-position: -5px -5px;
+}
+
+.sprite-blogger {
+    width: 48px;
+    height: 48px;
+    background-position: -63px -5px;
+}
+
+.sprite-facebook {
+    width: 48px;
+    height: 48px;
+    background-position: -121px -5px;
+}
+
+.sprite-github {
+    width: 48px;
+    height: 48px;
+    background-position: -5px -63px;
+}
+
+.sprite-instagram {
+    width: 48px;
+    height: 48px;
+    background-position: -63px -63px;
+}
+
+.sprite-linkedin {
+    width: 48px;
+    height: 48px;
+    background-position: -121px -63px;
+}
+
+.sprite-pinterest {
+    width: 48px;
+    height: 48px;
+    background-position: -5px -121px;
+}
+
+.sprite-skype {
+    width: 48px;
+    height: 48px;
+    background-position: -63px -121px;
+}
+
+.sprite-telegram {
+    width: 48px;
+    height: 48px;
+    background-position: -121px -121px;
+}
+
+.sprite-twitter {
+    width: 48px;
+    height: 48px;
+    background-position: -179px -5px;
+}
+
+.sprite-youtube {
+    width: 48px;
+    height: 48px;
+    background-position: -179px -63px;
+}
+
+.sprite-whatsapp {
+    width: 48px;
+    height: 48px;
+    background-position: -179px -121px;
+}

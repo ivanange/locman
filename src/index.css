@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+
+* {
+  @apply bg-transparent;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.rounded-50 {
+  border-radius: 50%;
+}
+
+.delay-\.5s {
+  animation-delay: 500ms;
+}
+
+.delay-\.75s {
+  animation-delay: 750ms;
+}
+
+.delay-1\.25s {
+  animation-delay: 1250ms;
+}
+
+.delay-1\.5s {
+  animation-delay: 1500ms;
+}
+
+.delay-1\.75s {
+  animation-delay: 1750ms;
+}
+
+.delay-2\.25s {
+  animation-delay: 2250ms;
+}
+
+.delay-2\.5s {
+  animation-delay: 2500ms;
+}
+
+.delay-2\.75s {
+  animation-delay: 2750ms;
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  scroll-behavior: smooth;
+
+}
+
+.article {
+  min-width: 250px;
+  min-height: 350px;
+}
+
+.article:nth-child(1) {
+  background-image: url("img/5-7/bw_img57 001.jpg");
+}
+
+.article:nth-child(2) {
+  background-image: url("img/5-7/bw_img57 003.jpg");
+}
+
+.article:nth-child(3) {
+  background-image: url("img/5-7/img57 001.jpg");
+}
+
+.article:nth-child(4) {
+  background-image: url("img/5-7/img57 002.jpg");
+}
+
+.article:nth-child(5) {
+  background-image: url("img/5-7/img57 003.jpg");
+}
+
+.article:nth-child(6) {
+  background-image: url("img/5-7/img57 004.jpg");
+}
+
+.article:nth-child(7) {
+  background-image: url("img/5-7/img57 004.jpg");
+}
+
+.article:nth-child(8) {
+  background-image: url("img/5-7/bw_img57 001.jpg");
+}
+
+.article:nth-child(9) {
+  background-image: url("img/5-7/img57 001.jpg");
+}
+
+.article:nth-child(10) {
+  background-image: url("img/5-7/img57 003.jpg");
+}
+
+.article:nth-child(11) {
+  background-image: url("img/5-7/bw_img57 003.jpg");
+}
+
+.article:nth-child(12) {
+  background-image: url("img/5-7/img57 003.jpg");
+}
+
+.article:nth-child(13) {
+  background-image: url("img/5-7/img57 002.jpg");
+}
+
+.scroll-button {
+  top: calc(50% - 2rem);
+}
+
+.scroll-button.inactive,
+.scroll-button.inactive * {
+  opacity: 0;
+}
+
+.aside>div:first-child {
+  @apply pt-5;
+}
+
+.aside>div:last-child {
+  @apply pb-5;
+}
+
+.slide .buttons-wrapper {
+  @apply z-10 absolute bottom-0 flex justify-center w-full pb-4;
+}
+
+.slide .buttons-wrapper .slide-button {
+  @apply h-3 w-3 border border-white rounded-full bg-transparent mx-1;
+}
+
+.slide .buttons-wrapper .slide-button.button-active {
+  @apply bg-orange-500 border-orange-500;
+}
+
+#home>* {
+  width: 100% !important;
+  height: 100% !important;
+}
