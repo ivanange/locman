@@ -55,6 +55,9 @@ module.exports = {
         '3xs': 'max( 200px, 10rem )',
         '2xs': ' 15rem',
       },
+      colors: {
+        "dark": "rgb(22, 22, 22)",
+      }
     },
   },
   variants: {

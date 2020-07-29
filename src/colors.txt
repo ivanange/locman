@@ -1,2 +1,8 @@
 #0c0c0c 
 #101010
+
+
+primary colors
+green ( tailwind)
+red ( tailwind )
+gold: #fed136

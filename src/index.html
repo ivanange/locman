@@ -19,32 +19,41 @@
                 <span class=" text-2xl tracking-tight font-light">&nbsp;Logistics</span>
             </div>
 
-            <ul id="nav" class="flex items-center self-stretch relative">
-                <li>
-                    <a class=" py-1 px-4 rounded-full font-light duration-200 hover:text-green-400" href="#home">
-                        Home
-                    </a class="">
-                </li>
-                <li>
-                    <a class=" py-1 px-4 rounded-full font-light duration-200 hover:text-green-400" href="#portfolio">
-                        Portfolio
-                    </a class="">
-                </li>
-                <li>
-                    <a class=" py-1 px-4 rounded-full font-light duration-200 hover:text-green-400" href="#services">
-                        Our services
-                    </a class="">
-                </li>
-                <li>
-                    <a class=" py-1 px-4 rounded-full font-light duration-200 hover:text-green-400" href="#contact">
-                        Contact
-                    </a class="">
-                </li>
-                <li id="marker" class="absolute bottom-0 left-0 border-t-2 border-green-400"></li>
-            </ul>
+            <div id="menu" class="fixed md:static top-0 bottom-0 w-full md:w-auto duration-500 md:self-stretch"
+                style="right: -100%;">
+                <ul id="nav"
+                    class="absolute  md:relative shadow-md md:shadow-none border-l border-dark md:border-l-0 w-fit-content md:w-auto h-full pt-16 md:pt-0 bg-black md:bg-transparent flex flex-col md:flex-row md:items-center right-0"
+                    style="min-width: 180px;">
+                    <li>
+                        <a class="h-10 md:h-auto flex md:inline items-center border-b md:border-0 border-t border-dark py-1 px-4 font-light duration-200 hover:text-green-600"
+                            href="#home">
+                            Home
+                        </a class="">
+                    </li>
+                    <li>
+                        <a class="h-10 md:h-auto flex md:inline items-center border-b md:border-0 border-dark py-1 px-4 font-light duration-200 hover:text-green-600"
+                            href="#portfolio">
+                            Portfolio
+                        </a class="">
+                    </li>
+                    <li>
+                        <a class="h-10 md:h-auto flex md:inline items-center border-b md:border-0 border-dark py-1 px-4 font-light duration-200 hover:text-green-600"
+                            href="#services">
+                            Our services
+                        </a class="">
+                    </li>
+                    <li>
+                        <a class="h-10 md:h-auto flex md:inline items-center border-b md:border-0 border-dark py-1 px-4 font-light duration-200 hover:text-green-600"
+                            href="#contact">
+                            Contact
+                        </a class="">
+                    </li>
+                    <li id="marker" class="absolute bottom-0 left-0 border-t-2 border-green-600"></li>
+                </ul>
+            </div>
 
-            <div class="flex self-stretch hidden">
-                <button class="pl-2 outline-none border-none focus:outline-none">
+            <div class="flex self-stretch md:hidden">
+                <button id="menutrigger" class="pl-2 outline-none border-none focus:outline-none">
                     <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>Menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -55,7 +64,7 @@
     </div>
     <div class="main h-screen w-screen flex flex-col">
         <div id="home" class="h-0 pb-9/16 bg-gray-300  relative">
-            <div id="player" class="absolute w-full h-full overflow-x-hidden flex"
+            <div id="player" class="absolute w-full h-full overflow-x-hidden flex bg-center bg-cover bg-no-repeat"
                 style="background-image: url('https://www.ambro.pl/files/ambro/img/transportAutHeader.jpg');">
             </div>
             <div class="main-content absolute h-full w-full flex flex-col justify-center items-center z-10 text-gray-100"
@@ -81,37 +90,38 @@
                 Transportaufträge sowie loyale sachliche Unterstützung in jeder Phase unserer Zusammenarbeit.
             </p>
         </div>
-        <div id="portfolio" class="stats flex flex-wrap text-2xl w-11/12 mx-auto justify-evenly py-20">
-            <div class=" w-56 flex flex-center flex-col">
-                <span class="countup text-7xl font-thin block text-center">1</span>
-                <span class=" block text-center">Years of Experience</span>
+        <div id="portfolio"
+            class="stats flex flex-col items-center md:flex-row text-xl lg:text-2xl w-full lg:w-11/12 mx-auto justify-evenly py-20">
+            <div class="w-48 lg:w-56 flex flex-center flex-col mb-6 md:mb-0">
+                <span class="countup text-6xl lg:text-7xl font-thin block text-center">1</span>
+                <span class=" block text-center pl-1">Years of Experience</span>
             </div>
-            <div class=" w-56 flex flex-center flex-col">
-                <span class="countup text-7xl font-thin block text-center">2</span>
+            <div class="w-48 lg:w-56 flex flex-center flex-col mb-6 md:mb-0">
+                <span class="countup text-6xl lg:text-7xl font-thin block text-center">2</span>
                 <span class=" block text-center">Satisfied customers</span>
             </div>
-            <div class=" w-56 flex flex-center flex-col">
-                <span class="countup text-7xl font-thin block text-center">3</span>
+            <div class="w-48 lg:w-56 flex flex-center flex-col mb-6 md:mb-0">
+                <span class="countup text-6xl lg:text-7xl font-thin block text-center">3</span>
                 <span class=" block text-center">Transported cars</span>
             </div>
-            <div class=" w-56 flex flex-center flex-col">
-                <span class="countup text-7xl font-thin block text-center">4</span>
+            <div class="w-48 lg:w-56 flex flex-center flex-col mb-6 md:mb-0">
+                <span class="countup text-6xl lg:text-7xl font-thin block text-center">4</span>
                 <span class=" block text-center">Active partners</span>
             </div>
         </div>
         <div>
             <div class=" pb-5/12 relative">
                 <div class="slide absolute top-0 left-0 w-full h-full bg-gray-300 flex overflow-hidden">
-                    <div class="slide-content h-full w-full flex-shrink-0 bg-green-600"></div>
                     <div class="slide-content h-full w-full flex-shrink-0 bg-green-300"></div>
+                    <div class="slide-content h-full w-full flex-shrink-0 bg-green-600"></div>
                     <div class="slide-content h-full w-full flex-shrink-0 bg-green-400"></div>
                     <div class="slide-content h-full w-full flex-shrink-0 bg-green-500"></div>
                 </div>
             </div>
         </div>
 
-        <div id="standouts" class="flex w-full px-10 py-20">
-            <div class="col w-1/4">
+        <div id="standouts" class="flex flex-wrap justify-evenly w-full px-6 lg:px-10 py-20">
+            <div class="col w-full sm:w-1/2 md:w-1/4 mb-6 md:mb-0 flex justify-evenly">
                 <div class="flex flex-col flex-center px-3 max-w-xs ">
                     <div class="image flex flex-center pb-6">
                         <svg class="w-24 h-24 fill-current text-green-600" xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col w-1/4">
+            <div class="col w-full sm:w-1/2 md:w-1/4 mb-6 md:mb-0 flex justify-evenly">
                 <div class="flex flex-col flex-center px-3 max-w-xs ">
                     <div class="image flex flex-center pb-6">
                         <svg class="w-24 h-24 fill-current text-green-600" xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col w-1/4">
+            <div class="col w-full sm:w-1/2 md:w-1/4 mb-6 md:mb-0 flex justify-evenly">
                 <div class="flex flex-col flex-center px-3 max-w-xs ">
                     <div class="image flex flex-center pb-6">
                         <svg class="w-24 h-24 fill-current text-green-600" xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col w-1/4">
+            <div class="col w-full sm:w-1/2 md:w-1/4 mb-6 md:mb-0 flex justify-evenly">
                 <div class="flex flex-col flex-center px-3 max-w-xs ">
                     <div class="image flex flex-center pb-6">
                         <svg class="w-24 h-24 fill-current text-green-600" xmlns="http://www.w3.org/2000/svg"
@@ -209,26 +219,26 @@
             </div>
         </div>
         <div class="pb-12" id="services"></div>
-        <div class=" pb-5/12 mb-0 relative bg-no-repeat bg-cover bg-center text-white mb-64">
-            <div class="slide absolute top-0 left-0 w-full h-full bg-gray-300 flex flex-col overflow-hidden bg-cover bg-center bg-no-repeat"
-                style="background-image: radial-gradient(circle at 100%,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 1)),url(https://source.unsplash.com/LX0pplSjE2g/1600x900);">
-                <h1 class="w-full font-thin text-5xl text-center py-6 pr-6">Our Services</h1>
+        <div class=" relative bg-no-repeat bg-cover bg-center text-white mb-64 flex">
+            <div class="relative  flex flex-col top-0 left-0 w-full h-full z-10">
+                <h1 class="w-full font-thin text-5xl text-center py-6 md:pr-6">Our Services</h1>
                 <div class="w-full flex flex-center flex-grow">
-                    <ul class="max-w-xl list-disc list-outside">
-                        <li class=" font-light pb-8">
+                    <ul class="max-w-xl md:list-disc list-outside px-3">
+                        <li class=" font-light pb-10 md:pb-8 text-center md:text-left">
                             <h2 class="font-semibold text-2xl pb-2">
                                 Transport of passenger cars
                             </h2>
-                            We have a modern fleet of many trucks that are properly adapted to international transport
+                            We have a modern fleet of many trucks that are properly adapted to international
+                            transport
                             of passenger cars.
                         </li>
-                        <li class=" font-light pb-8">
+                        <li class=" font-light pb-10 md:pb-8 text-center md:text-left">
                             <h2 class="font-semibold text-2xl pb-2">
                                 Every truck is equipped with
                             </h2>
                             A ramp, a hoist, stop belts, tight tarpaulins, protection mats etc.
                         </li>
-                        <li class=" font-light pb-8">
+                        <li class=" font-light pb-10 md:pb-8 text-center md:text-left">
                             <h2 class="font-semibold text-2xl pb-2">
                                 We transport passenger
                             </h2>
@@ -238,6 +248,9 @@
                     </ul>
                 </div>
             </div>
+            <div class="absolute pb-5/12 w-full h-full bg-gray-300 overflow-hidden bg-cover bg-center bg-no-repeat z-0"
+                style="background-image: radial-gradient(circle at 100%,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 1)),url(https://source.unsplash.com/LX0pplSjE2g/1600x900);">
+            </div>
         </div>
 
         <div id="contact" class="footer flex flex-col bg-black text-white">
@@ -245,32 +258,32 @@
                 <div class="about w-auto px-8 pb-8">
                     <h3 class="uppercase font-bold text-sm py-3">About Us</h3>
                     <ul>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Who we are and were we are from</a>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Who we are and were we are from</a>
                         </li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">What we do, how we help the
+                        <li class="py-1"><a href="#" class="hover:text-green-600">What we do, how we help the
                                 society</a>
                         </li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">The history of the brave scientific
+                        <li class="py-1"><a href="#" class="hover:text-green-600">The history of the brave scientific
                                 observatory</a></li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">The Founder ans his associates</a>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">The Founder ans his associates</a>
                         </li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">The Vision, the beginning</a></li>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">The Vision, the beginning</a></li>
                     </ul>
                 </div>
                 <div class="events w-auto px-8 pb-8">
                     <h3 class="uppercase font-bold text-sm py-3">Events</h3>
                     <ul>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Covid pandemic, the outcomes
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Covid pandemic, the outcomes
                                 detailed</a>
                         </li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Forestry and nature protection
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Forestry and nature protection
                                 Conference</a></li>
                         <li class="py-1">
-                            <a href="#" class="hover:text-green-300">
+                            <a href="#" class="hover:text-green-600">
                                 Social well being in developping countries redefined
                             </a>
                         </li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">GIS and DataScience applied to
+                        <li class="py-1"><a href="#" class="hover:text-green-600">GIS and DataScience applied to
                                 Forestry</a>
                         </li>
 
@@ -279,29 +292,29 @@
                 <div class="join w-auto px-8 pb-8">
                     <h3 class="uppercase font-bold text-sm py-3">Join Us</h3>
                     <ul>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">How to become a non-profit partner</a>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">How to become a non-profit partner</a>
                         </li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Investing in LOCMAN</a></li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Manage your subscription to
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Investing in LOCMAN</a></li>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Manage your subscription to
                                 Newsteller</a>
                         </li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Newsteller</a></li>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Newsteller</a></li>
                     </ul>
                 </div>
                 <div class="follow w-auto px-8 pb-8">
                     <h3 class="uppercase font-bold text-sm py-3">Follow</h3>
                     <ul>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Facebook</a></li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Instagram</a></li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">Tweeter</a></li>
-                        <li class="py-1"><a href="#" class="hover:text-green-300">LinkedIn</a></li>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Facebook</a></li>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Instagram</a></li>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">Tweeter</a></li>
+                        <li class="py-1"><a href="#" class="hover:text-green-600">LinkedIn</a></li>
 
 
                     </ul>
                 </div>
             </div>
             <div
-                class="copy-right flex justify-between items-center pl-2 pr-6 pb-0 border-t border-black text-xs md:text-sm leading-snug">
+                class="copy-right flex justify-between items-center pl-2 pr-6 pb-0 border-t border-dark text-xs md:text-sm leading-snug">
                 <div class="flex items-center py-2 mr-6">
                     <span class="font-semibold text-xl tracking-tight uppercase font-agus">LOCMAN</span>
                 </div>

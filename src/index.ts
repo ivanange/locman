@@ -30,10 +30,14 @@ window.onload = () => {
   let nav = document.getElementById("nav");
   let marker = document.getElementById("marker");
   let links = nav.querySelectorAll("a");
+  let menuTrigger = document.getElementById("menutrigger");
+  let navMenu = document.getElementById("menu");
+
   links.forEach((e) =>
     e.addEventListener("click", () => {
       marker.style.width = `${e.offsetWidth}px`;
       marker.style.left = `${e.offsetLeft}px`;
+      navMenu.click();
     })
   );
   (links[0] as HTMLElement).click();
@@ -46,7 +50,7 @@ window.onload = () => {
     counters.push(new CountUp(e, stats[i]));
   });
 
-  window.addEventListener("scroll", (e) => {
+  let scrollHandler = () => {
     if (isInViewport(counter.children[0] as HTMLElement) && !counted) {
       counters.forEach((c) => c.start());
       let counted = true;
@@ -62,8 +66,24 @@ window.onload = () => {
       navbar.classList.toggle("bg-black");
       navbar.classList.toggle("py-2");
     }
+  };
+
+  window.addEventListener("scroll", scrollHandler);
+
+  //responsive nav logic
+  menuTrigger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navMenu.style.right = "0px";
+  });
+  navMenu.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navMenu.style.right = "-100%";
+  });
+  nav.addEventListener("click", (e) => {
+    e.stopPropagation();
   });
 
   //slide logic
   slideInit();
+  scrollHandler();
 };

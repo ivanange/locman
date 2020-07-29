@@ -1,3 +1,5 @@
+/*
+
 ID = "DIW8DE2CiQM";
 window.onYouTubeIframeAPIReady = function () {
     window.player = new YT.Player("player", {
@@ -16,6 +18,7 @@ window.onYouTubeIframeAPIReady = function () {
             playlist: ID,
             end: 104,
             start: 10,
+            origin: window.location.origin
         },
         events: {
             'onReady': initVideo,
@@ -27,3 +30,5 @@ initVideo = (e) => {
     e.target.setVolume(30);
     //e.target.playVideo();
 };
+
+*/
